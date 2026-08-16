@@ -18,12 +18,12 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void PIC12F1822_INITIAL(void)
 {
-	INTCON=0b00000000;         //disabled all interupts
-	OSCCON=0b00111010;         //use internal oscillator block,oscillator:500KHZ,4xPLL is disable
+	INTCON=0b00000000;         //Disabled all interupts
+	OSCCON=0b00111010;         //Use internal oscillator block,oscillator:500KHZ,4xPLL is disable
 	APFCON=0b00000000;         //PORTA as I/O only
 	ANSELA=0b00000000;         //PORTA as digital only
 	TRISA =0b00001000;         //RA(0-2)+RA(4-5) as outputs,RA3 as input    
-	PORTA =0b00000000;         //reset the data on pins of PORTA
+	PORTA =0b00000000;         //Reset the data on pins of PORTA
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////*WRITE UNSIGNED LONG INTEGER TO EEPROM IN PIC12F1822*//////////////////////////////////////////
