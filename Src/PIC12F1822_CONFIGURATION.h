@@ -47,4 +47,4 @@ __CONFIG(FCMEN_OFF & IESO_OFF & CLKOUTEN_OFF & BOREN_OFF & CPD_OFF & CP_OFF & MC
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void PIC12F1822_INITIAL(void);
 void WRITE_UNSLON_EEPROM_PIC12F1822(unsigned char address,unsigned long data);
-unsigned long int READ_UNSLON_EEPROM_PIC12F1822(unsigned char address);  
+unsigned long READ_UNSLON_EEPROM_PIC12F1822(unsigned char address);  
