@@ -49,7 +49,7 @@
 	</div>
 	<div>
 		<h4>📐 Circuit schematic designed for this setup</h4>
-		<img src="Schematics/schematic.png" alt="Circuit Schematic" width="600"/>
+		<img src="Schematics/PROJECT Schematics.png" alt="Circuit Schematic" width="600"/>
 	</div>
 	<hr>
 	<div>
