@@ -1,8 +1,8 @@
 <div>
-	<h1>Project Name: PIC12F1822 -Internal EEPROM</h1>
+	<h1>Project Name: PIC12F1822 - Internal EEPROM</h1>
 	<div>
 		<h3>🗺️ Project Overview</h3>
-		<p>A bare-metal C implementation for interfacing the EEPROM with the PIC12F1822 via I2C.</p>
+		<p>Bare-metal C driver for writing and reading 32-bit unsigned long values to PIC12F1822 internal EEPROM with LED status verification.</p>
 	</div>
 	<hr>
 </div>
@@ -10,10 +10,10 @@
 	<div>
 		<h4>📋 Key Hardware Specifications</h4>
 		<ul type="disc">													
-			<li>Operating Voltage	-</li>
-			<li>Microcontroller		-</li>
-			<li>Target Peripheral	-</li>
-			<li>Interface Protocol	-</li>
+			<li>Operating Voltage	-5V</li>
+			<li>Microcontroller		-PIC12F1822</li>
+			<li>Target Peripheral	-Internal EEPROM</li>
+			<li>Interface Protocol	-None</li>
 		</ul>
 	</div>
 	<hr>
@@ -26,14 +26,24 @@
 				<th>Function / Description</th>			
 			</tr>
 			<tr>
-				<td>Cell 1</td>
-				<td>Cell 2</td>	
-				<td>Cell 3</td>												
+				<td>RA0</td>
+				<td>ICSPDAT & BLUE LED</td>	
+				<td>ICSP & Writing to EEPROM done</td>												
 			</tr>
 			<tr>
-				<td>Cell 1</td>
-				<td>Cell 2</td>	
-				<td>Cell 3</td>												
+				<td>RA1</td>
+				<td>ICSPCLK & GREEN LED</td>	
+				<td>ICSP & Reading from EEPROM OK</td>												
+			</tr>
+			<tr>
+				<td>RA2</td>
+				<td>RED LED</td>	
+				<td>Reading from EEPROM ERROR</td>												
+			</tr>
+			<tr>
+				<td>RA3</td>
+				<td>ICSP-VPP</td>	
+				<td>ICSP</td>												
 			</tr>
 		</table>
 	</div>
@@ -47,7 +57,8 @@
 		<pre>
 ├── Src/            Source code (.c) and headers (.h)
 ├── Schematics/     Circuit diagrams and pinout configurations
-└── Datasheets/     Official IC datasheets
+├── Datasheets/     Official IC datasheets
+└── Pictures/     	Pictures associated to the project
 		</pre>
 	</div>
 </div>
